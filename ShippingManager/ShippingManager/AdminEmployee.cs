@@ -7,5 +7,8 @@ namespace ShippingManager
 {
     public class AdminEmployee : Employee
     {
+         public AdminEmployee(string firstName, string lastName, string middleName, string id, string plainTextPassword)
+        {
+        }
     }
 }
