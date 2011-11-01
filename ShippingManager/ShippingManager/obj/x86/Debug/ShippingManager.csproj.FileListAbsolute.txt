@@ -1,0 +1,8 @@
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debug\ShippingManager.Properties.Resources.resources
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\bin\Debug\ShippingManager.exe
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\bin\Debug\ShippingManager.pdb
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debug\ShippingManager.exe
+I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debug\ShippingManager.pdb
