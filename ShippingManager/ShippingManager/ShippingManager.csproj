@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Abroad.cs" />
     <Compile Include="AcceptanceEmployee.cs" />
+    <Compile Include="AddPackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPackageForm.Designer.cs">
+      <DependentUpon>AddPackageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Address.cs" />
     <Compile Include="AdminEmployee.cs" />
     <Compile Include="AdminForm.cs">
@@ -60,6 +66,12 @@
     <Compile Include="DeliveryVehicle.cs" />
     <Compile Include="DeviceSystem.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="FindPackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindPackageForm.Designer.cs">
+      <DependentUpon>FindPackageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     <Compile Include="ShippingSystem.cs" />
     <Compile Include="Snapshot.cs" />
     <Compile Include="StoreFront.cs" />
+    <Compile Include="StoreFrontForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreFrontForm.Designer.cs">
+      <DependentUpon>StoreFrontForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transport.cs" />
     <Compile Include="Warehouse.cs" />
     <Compile Include="WarehouseEmployee.cs" />
