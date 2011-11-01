@@ -62,7 +62,19 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeliverPackageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliverPackageForm.Designer.cs">
+      <DependentUpon>DeliverPackageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeliveryEmployee.cs" />
+    <Compile Include="DeliveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryForm.Designer.cs">
+      <DependentUpon>DeliveryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeliveryVehicle.cs" />
     <Compile Include="DeviceSystem.cs" />
     <Compile Include="Employee.cs" />
