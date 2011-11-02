@@ -8,26 +8,13 @@ namespace ShippingManager
     public class Route
     {
         private Location[] locations;
-        private float durationInDays;
 
         public Route (Location[] locations, float durationInDays)
         {
-            
-            durationInDays = DurationInDays;
-         }
-    
-
-
-        public float DurationInDays 
-        { 
-            get
-            {
-                return 1;
-            }
-            
-            set
-            {
-            }
+            this.locations = locations;
+            DurationInDays = durationInDays;
         }
+
+        public float DurationInDays { get; set; }
     }
 }

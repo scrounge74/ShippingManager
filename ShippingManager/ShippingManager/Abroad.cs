@@ -13,10 +13,26 @@ namespace ShippingManager
         {
         }
 
+        public int[] ZipCodes
+        {
+            get
+            {
+                return zipCodes;
+            }
+            set
+            {
+                zipCodes = value;
+            }
+
+        }
+
         public bool ContainsZipCode(int zipCode)
         {
+            foreach (int i in zipCodes)
+                if (i == zipCode)
+                    return true;
 
-            return;
+            return false;
         }
     }
 }

@@ -92,6 +92,7 @@
     </Compile>
     <Compile Include="LabelSystem.cs" />
     <Compile Include="Location.cs" />
+    <Compile Include="Moveable.cs" />
     <Compile Include="Package.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

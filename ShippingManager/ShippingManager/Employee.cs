@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Security.Cryptography;
 
 namespace ShippingManager
 {
@@ -12,48 +13,42 @@ namespace ShippingManager
         protected string middleName;
         protected string id;
         protected string passwordHash;
+        protected readonly MD5CryptoServiceProvider hashFunction;
+
+        protected Employee(string firstName, string middleName, string lastName, string id, string plainTextPassword)
+        {
+            FirstName = firstName;
+            MiddleName = middleName;
+            LastName = lastName;
+            Id = id;
+
+            hashFunction = new System.Security.Cryptography.MD5CryptoServiceProvider();
+            passwordHash = hashPassword(plainTextPassword);
+        }
 
         public string FirstName
         {
-            get
-            {
-                return "";
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public string LastName
         {
-            get
-            {
-                return "";
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public string MiddleName
         {
-            get
-            {
-                return "";
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public string Name
         {
             get
             {
-                return "";
-            }
-            set
-            {
+                return FirstName + " " + MiddleName + " " + LastName;
             }
         }
 
@@ -61,10 +56,7 @@ namespace ShippingManager
         {
             get
             {
-                return;
-            }
-            set
-            {
+                return MiddleName.Substring(0, 1).ToCharArray()[0];
             }
         }
 
@@ -72,55 +64,38 @@ namespace ShippingManager
         {
             get
             {
-                return "";
+                return id;
             }
             set
             {
+                id = value;
             }
         }
 
         public bool IdMatch (string id)
         {
-            get
-            {
-                return;
-            }
-            set
-            {
-            }
+            return id.Equals(this.id);
         }
 
         public string PasswordHash
         {
             get
             {
-                return "";
+                return passwordHash;
             }
-            set
-            {
-            }
+
         }
 
         public bool PasswordMatch(string plainTextPassword)
         {
-            get
-            {
-                return "";
-            }
-            set
-            {
-            }
+            return hashPassword(plainTextPassword).Equals(passwordHash);
         }
 
         protected string hashPassword(string plainTextPassword)
         {
-            get
-            {
-                return "";
-            }
-            set
-            {
-            }
+            byte[] data = System.Text.Encoding.ASCII.GetBytes(plainTextPassword);
+            data = hashFunction.ComputeHash(data);
+            return System.Text.Encoding.ASCII.GetString(data);
         }
 
     }

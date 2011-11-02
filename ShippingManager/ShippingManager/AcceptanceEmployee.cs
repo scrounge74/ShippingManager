@@ -8,23 +8,14 @@ namespace ShippingManager
 
     public class AcceptanceEmployee : Employee
     {
-        private StoreFront storefront;
-
-        //not sure about this
         public StoreFront CurrentStoreFront
         {
-            get
-            {
-                return;
-
-            }
-
-                set
-                {
-                }
+            get;
+            set;
         }
 
-        public AcceptanceEmployee(string firstName, string lastName, string middleName, string id, string plainTextPassword)
+        public AcceptanceEmployee(string firstName, string middleName, string lastName, string id, string plainTextPassword)
+            : base(firstName, middleName, lastName, id, plainTextPassword)
         {
         }
 

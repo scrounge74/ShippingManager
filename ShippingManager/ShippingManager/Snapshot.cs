@@ -9,7 +9,7 @@ namespace ShippingManager
     public class Snapshot
     {
         private Route route;
-        private Date date;
+        private DateTime date;
         private string message;
 
         public Snapshot(Route route)
@@ -20,8 +20,9 @@ namespace ShippingManager
         {
         }
 
-        public string ToString
+        public override string ToString()
         {
+            return base.ToString();
         }
     }
 }

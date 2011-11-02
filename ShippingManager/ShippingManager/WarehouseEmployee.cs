@@ -7,14 +7,16 @@ namespace ShippingManager
 {
     public class WarehouseEmployee : Employee
     {
-        private Warehouse warehouse;
-
         public Warehouse CurrentWareHouse
         {
+            get;
+            set;
         }
 
-         public WarehouseEmployee(string firstName, string lastName, string middleName, string id, string plainTextPassword)
+        public WarehouseEmployee(string firstName, string middleName, string lastName, string id, string plainTextPassword)
+            : base(firstName, middleName, lastName, id, plainTextPassword)
         {
+            
         }
     }
 }

@@ -13,7 +13,8 @@ namespace ShippingManager
         {
         }
 
-         public DeliveryEmployee(string firstName, string lastName, string middleName, string id, string plainTextPassword)
+        public DeliveryEmployee(string firstName, string middleName, string lastName, string id, string plainTextPassword)
+            : base(firstName, middleName, lastName, id, plainTextPassword)
         {
         }
     }
