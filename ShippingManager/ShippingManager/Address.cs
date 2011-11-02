@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public class Address
     {
         public enum STATE_OPTIONS

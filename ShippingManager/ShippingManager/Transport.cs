@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public class Transport : Moveable
     {
         public enum TRANPORT_TYPES

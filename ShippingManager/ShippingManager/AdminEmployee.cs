@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public class AdminEmployee : Employee
     {
         public AdminEmployee(string firstName, string middleName, string lastName, string id, string plainTextPassword)

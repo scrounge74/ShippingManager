@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public abstract class Moveable
     {
         private List<Package> packages;
@@ -13,6 +14,8 @@ namespace ShippingManager
 
         public Moveable(int volumeCapacity, int weightCapacity, Route route)
         {
+            packages = new List<Package>();
+
             VolumeCapacity = volumeCapacity;
             WeightCapacity = weightCapacity;
             CurrentRoute = route;
@@ -40,8 +43,8 @@ namespace ShippingManager
             }
         }
 
-        public int VolumeAvailable { get { return VolumeCapacity-currentVolume } }
-        public int WeightAvailable { get { return WeightCapacity-currentWeight } }
+        public int VolumeAvailable { get { return VolumeCapacity - currentVolume; } }
+        public int WeightAvailable { get { return WeightCapacity - currentWeight; } }
 
         public int VolumeCapacity { get; set; }
 
@@ -52,6 +55,5 @@ namespace ShippingManager
         public Location CurrentLocation { get { return currentLocation; } }
 
         public bool Full { get { return (currentWeight > WeightCapacity || currentVolume > VolumeCapacity); } }
-    }
     }
 }

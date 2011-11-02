@@ -5,12 +5,13 @@ using System.Text;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public class DeliveryEmployee : Employee
     {
-        private DeliveryVehicle deliveryvehicle;
-
         public DeliveryVehicle CurrentDeliveryVehicle
         {
+            get;
+            set;
         }
 
         public DeliveryEmployee(string firstName, string middleName, string lastName, string id, string plainTextPassword)

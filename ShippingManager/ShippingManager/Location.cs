@@ -1,6 +1,8 @@
-﻿
+﻿using System;
+
 namespace ShippingManager
 {
+    [Serializable()]
     public abstract class Location
     {
         private Address locationAddress;

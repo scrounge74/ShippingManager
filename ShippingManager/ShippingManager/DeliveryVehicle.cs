@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public class DeliveryVehicle : Moveable
     {
         private bool assignedToDriver;

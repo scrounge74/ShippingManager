@@ -5,6 +5,7 @@ using System.Text;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public class Abroad : Location
     {
         private int[] zipCodes;

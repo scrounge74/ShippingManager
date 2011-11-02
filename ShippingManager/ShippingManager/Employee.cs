@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 
 namespace ShippingManager
 {
+    [Serializable()]
     public abstract class Employee
     {
         protected string firstName;
@@ -13,6 +14,7 @@ namespace ShippingManager
         protected string middleName;
         protected string id;
         protected string passwordHash;
+        [field: NonSerialized()]
         protected readonly MD5CryptoServiceProvider hashFunction;
 
         protected Employee(string firstName, string middleName, string lastName, string id, string plainTextPassword)

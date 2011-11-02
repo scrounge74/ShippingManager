@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ShippingManager
 {
-
+    [Serializable()]
     public class Snapshot
     {
         private Route route;
