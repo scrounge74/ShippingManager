@@ -8,3 +8,4 @@ I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debu
 I:\Code\C#\GitRepos\shippingmanager\ShippingManager\ShippingManager\obj\x86\Debug\ShippingManager.pdb
 C:\Users\Dell\Documents\Comp. Sci\Object Oriented Programming\Shipping Project\ShippingManager\ShippingManager\ShippingManager\obj\x86\Debug\ShippingManager.pdb
 C:\Users\Public\CLASSES\C-Sharp\teamproject\PJS\ShippingManager\ShippingManager\ShippingManager\obj\x86\Debug\ShippingManager.pdb
+C:\ShippingManager\ShippingManager\ShippingManager\obj\x86\Debug\ShippingManager.pdb
